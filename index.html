@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">   
+    <title>Perry Stephenson - Virginia Commonwealth University - Computer Science</title>
+    
+</head>
+<!---->
+
+
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="50">
+    
+    <!--Navigation Bar-->
+    
+    <div class="nav navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">Perry Julian</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li><a href=#jumbotron>Home</a></li>
+                    <li><a href=#about>About</a></li>
+                    <li><a href=#education>Education</a></li>
+                    <li><a href=#>Portfolio</a></li>
+                    <li><a href=#>Contact</a></li>
+                </ul>   
+            </div>
+        </div>
+    </div>
+    <!--Jumbotron-->
+    
+    <div class="jumbotron" id="jumbotron">
+        <div class="container-fluid jumbotron-img">
+            <img id="jumbotron-img" class="img-responsive" src="background_img1.jpg">  
+        </div>
+    </div>   
+    <!--About Me-->
+    
+    <div class="about" id="about">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    Hello
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    world my name is perry
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Page Break 1-->
+    
+    <div class="page-break1 hidden-xs">
+        <div class="container-fluid">
+            <div class="row" id="row">
+                <div class="col-md-1">      
+                </div>
+                <div class="col-md-10">
+                    <div class="row-of-photos">
+                        <ul id="photo-row-bottom">
+                            <div class="row">
+                            <li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/3e6d10bd713ad29fcbd07e8cfa613012/tumblr_mnnc0rdg1C1qj59pro1_250.jpg"></li><!--
+                            --><li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/034989934d24bb0b954ee7ae4b2c4cf1/tumblr_n23a50DQ6P1r4u81xo1_500.jpg"></li><!--
+                            --><li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/tumblr_m9lc1p4r9e1qfhctdo1_250.jpg"></li><!--
+                            --><li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/05fa9783300114ea74530935147718a7/tumblr_mibs88Iy9s1rz66a3o1_250.jpg"></li><!--
+                            --><li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/c5ddb1f3d77f844bb0895810347b342e/tumblr_njg056NeDU1qlp9gro1_250.jpg"></li><!--
+                            --><li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/188e652ccda5e74ceedee32af861dd4d/tumblr_nrr7rjhePb1rqbmmzo1_250.jpg"></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>             
+                <div class="col-md-1">  
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!--Page Education-->
+    <div id="education" class="education">
+        <div class="container-fluid">
+            
+            <div class="col-md-5">    
+            </div>
+            <div class="col-md-7">
+                <div class="page-header">
+                    <h1>Education</h1>
+                </div>
+                <h4><strong>Virginia Commonwealth University</strong></h4>
+                <h4>B.S. Computer Science</h4>
+                <h5>Certifications: Cybersecurity</h5>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Page Break 2-->
+    
+    <div class="page-break2">
+        <div class="container-fluid">
+            <div class="row" id="row">
+                <div class="col-md-12">
+                    <div id="page-break2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+    <div class="projects">
+        
+    </div>
+    
+    <div class="contact">
+        
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script>
+        $('document').ready(function() {
+            <!---->
+            $('body').scrollspy({ target: '.nav' });
+            <!---->
+            $('.nav .navbar-nav li>a').click(function(){
+                var link = $(this).attr('href');
+                var position = $(link).offset().top+20;
+            $('body,html').animate({scrollTop:position},700);
+        });
+        
+    });
+    </script>
+</body>
+</html>
