@@ -1,29 +1,35 @@
 body {
     position: relative;
+   
 }
 .nav {
     background-color: rgba(39,39,39,1); 
 }
+
+.navbar-nav {
+    background-color: rgba(39,39,39,.9);
+}
 .jumbotron {
-    border-bottom: 1px solid black;
+   
     background-color: rgba(0,0,0, 1);
     padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .jumbotron-img {
     padding: 0px;
 }
 #jumbotron-img {
-    max-height: 100%;
+    
     max-width: 100%;
 }
 .about{
     height: 500px;
     text-align: center;
-    background-color: white;
+    background-color: rgba(39,39,39,.05);
 }
 
 #row {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(39,39,39,1);
 }
 
 .page-break1 ul li{
@@ -51,4 +57,8 @@ body {
 
 #page-break2{
     height: 200px;
+}
+
+.projects {
+    background-color: rgba(39,39,39,.3);
 }
