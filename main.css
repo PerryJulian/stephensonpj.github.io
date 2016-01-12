@@ -44,14 +44,15 @@ body {
 }
 
 #tumblr-photo {
-    height: 300px;
+    height: 150px;
     display: inline-block;
 
-    margin: 
+    margin: auto;
 }
 
 #photo-row-bottom {
-    margin: 0px;
+    margin: auto;
+    padding: 0px;
 }
 
 #page-break2{
