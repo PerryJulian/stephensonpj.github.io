@@ -3,16 +3,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <title>Perry Stephenson - Virginia Commonwealth University - Computer Science</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Perry Stephenson | Virginia Commonwealth University | Computer Science - Senior</title>
     
 </head>
-<!---->
-
-
-<body data-spy="scroll" data-target=".navbar-nav" data-offset="50">
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
     
     <!--Navigation Bar-->
     
@@ -31,31 +28,32 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
-                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Experience">Experience</a></li>
                     <li><a href="#Projects">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>   
             </div>
         </div>
     </div>
-    <!--Jumbotron-->
+    
+    <!--Home-->
     
     <div class="jumbotron" id="Home">
         <div class="container-fluid jumbotron-img">
             <img id="jumbotron-img" class="img-responsive" src="background_img1.jpg">  
         </div>
-    </div>   
-    <!--About Me-->
+    </div>
+    
+    <!--About-->
     
     <div class="about" id="About">
         <div class="container-fluid ">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    Hello
+                    
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <p>My name is Perry Stephenson, I am currently a computer science student at VCU located in Richmond Virginia.</p>
-                    <p>Over the years I </p>
+                    
                 </div>
             </div>
         </div>
@@ -88,19 +86,137 @@
         </div>    
     </div>
     
-    <!--Page Education-->
-    <div class="education" id="Education">
+    <!--Education-->
+    
+    <div class="education" id="Experience">
         <div class="container-fluid">
-            
-            <div class="col-md-5">    
+            <div class="col-md-2">
+                
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5">
+                <div class="page-header">
+                    <h1>Programming Skills</h1>
+                </div>
+                <div>
+
+                <!-- Skill Tabs -->
+                
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                      <li role="presentation"><a href="#software-development" aria-controls="software-development" role="tab" data-toggle="tab">Software Development</a></li>
+                      <li role="presentation class="active""><a href="#web-development" aria-controls="web-development" role="tab" data-toggle="tab">Web Development</a></li>  
+                    </ul>
+                    
+                    <!--Skill Tab Panes -->
+                    
+                    <div class="tab-content">
+                        
+                        <!--Software Development Tab-->
+                        
+                        <div role="tabpanel" class="tab-pane fade" id="software-development">
+                         
+                            <!--Software Development tab buttons -->
+                         
+                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#programming-languages" aria-controls="home" role="tab" data-toggle="pill">
+                                        Languages
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#version-control" aria-controls="profile" role="tab" data-toggle="pill">
+                                        Version Control Systems
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#mobile-os" aria-controls="messages" role="tab" data-toggle="pill">
+                                        Mobile OS
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <!--Software Development Tab button panes-->
+                            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active fade in" id="programming-languages">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Java</li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="version-control">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Github</li>
+                                        <li class="list-group-item list-group-item-info">Bitbucket</li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="mobile-os">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Android</li>
+                                    </ul>
+                                </div>                  
+                            </div>           
+                        </div>
+                        
+                        <!--Web Development Tab-->
+                        
+                        <div role="tabpanel" class="tab-pane active fade" id="web-development">
+                            
+                            <!--Web Development tab buttons -->
+                            
+                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#programming-languages1" aria-controls="home" role="tab" data-toggle="pill">
+                                        Languages
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#frameworks" aria-controls="profile" role="tab" data-toggle="pill">
+                                        Frameworks
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#libraries" aria-controls="messages" role="tab" data-toggle="pill">
+                                        Libraries
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <!--Web Development Tab button panes-->
+                            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade active in" id="programming-languages1">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">HTML</li>
+                                        <li class="list-group-item list-group-item-info">CSS</li>
+                                        <li class="list-group-item list-group-item-info">Javascript</li>
+                                        <li class="list-group-item list-group-item-info">PHP</li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="frameworks">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">Bootstrap</li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="libraries">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-info">jQuery</li>
+                                    </ul>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Education-->
+            
+            <div class="col-md-3">
                 <div class="page-header">
                     <h1>Education</h1>
                 </div>
+                <br>
                 <h4><strong>Virginia Commonwealth University</strong></h4>
                 <h4>B.S. Computer Science</h4>
-                <h5>Cybersecurity certification</h5>
+                <h5>Cybersecurity Certification</h5>
                 <br><br><br><br><br><br><br>
             </div>
         </div>
@@ -119,23 +235,71 @@
     </div>
     
  
+    <!--Projects-->
+    
     <div class="projects" id="Projects">
         <div class="container-fluid">
             <div class="col-md-2">
                 
             </div>
             <div class="col-md-8" id="projects">
-                <div class="page-header"><h1>Current Projects</h1></div>
+                <div class="page-header"><h1>Featured Projects</h1></div>
                 <div class="well" style="text-align: center"> 
-                    <br><br><br><br><br><h3>Coming Soon...</h3><br><br><br><br><br>
+                    <br><br><br><br><br>
+                    <h3>Coming Soon...</h3>
+                    <br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    
+   <!--Page Break 3-->
+    
+    <div class="page-break3">
+        <div class="container-fluid">
+            <div class="row" id="row">
+                <div class="col-md-12">
+                    <div id="page-break2"></div>
                 </div>
             </div>
         </div>
     </div>
+   
+    <!--Contact-->
     
-    <div class="contact">
-        
+    <div class="contact" id="Contact">
+        <div class="container-fluid">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-2">
+                 <div class="page-header">
+                    <h1>Connect</h1>
+                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="page-header">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="well">
+                        <br><br><br><br><br>
+                </div>
+            </div>
+        </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <!--JQUERY-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script>
+        $('document').ready(function() {
+                
+        });  
+    </script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
     <script>
         $('.navbar-nav a').click(function(){
                 var link = $(this).attr('href');
@@ -143,15 +307,6 @@
             $('body').animate({scrollTop:position},1000);   
         });
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-        $('document').ready(function() {
-            
-            $('body').scrollspy({ target: '.nav' });
-                
-        });  
-    </script>
-    
     
     
 </body>

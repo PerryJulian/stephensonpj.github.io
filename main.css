@@ -2,7 +2,7 @@ body {
     position: relative;
    
 }
-.nav {
+.navbar-default {
     background-color: rgba(39,39,39,1); 
 }
 
@@ -16,6 +16,7 @@ body {
     margin-bottom: 0px;
 }
 .jumbotron-img {
+    
     padding: 0px;
 }
 #jumbotron-img {
@@ -31,6 +32,8 @@ body {
 #row {
     background-color: rgba(39,39,39,1);
 }
+
+
 
 .page-break1 ul li{
     display: inline-block;
@@ -61,4 +64,8 @@ body {
 
 .projects {
     background-color: rgba(39,39,39,.3);
+}
+
+.page-header {
+    text-align: center;
 }
