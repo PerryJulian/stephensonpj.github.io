@@ -33,9 +33,7 @@ body {
     background-color: rgba(39,39,39,1);
 }
 
-
-
-.page-break1 ul li{
+.page-break ul li{
     display: inline-block;
     background-color: black;
 }
@@ -56,14 +54,18 @@ body {
     margin: 0px;
 }
 
-
-
 #page-break2{
     height: 200px;
 }
 
 .projects {
     background-color: rgba(39,39,39,.3);
+}
+
+.glow {
+    webkit-filter: blur(5px);
+    filter: blur(5px);
+    box-shadow: 10px 15px 45px #fff;
 }
 
 .page-header {
