@@ -30,7 +30,10 @@ body {
 }
 
 #row {
-    background-color: rgba(39,39,39,1);
+    background-color: rgba(39,39,39,.5);
+}
+.page-break {
+   background-color: rgba(39,39,39,1); 
 }
 
 .page-break ul li{
@@ -56,7 +59,7 @@ body {
 }
 
 #page-break2{
-    height: 200px;
+    height: 100px;
 }
 
 .projects {
@@ -70,5 +73,23 @@ body {
 }
 
 .page-header {
+    text-align: center;
+}
+.form-fill{
+    position: relative;
+    padding-bottom: 85%;
+    padding-top: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form-fill iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.well {
     text-align: center;
 }
