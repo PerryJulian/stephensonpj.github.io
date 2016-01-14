@@ -10,30 +10,43 @@ body {
     background-color: rgba(39,39,39,.9);
 }
 .jumbotron {
-   
     background-color: rgba(0,0,0, 1);
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-.jumbotron-img {
-    
+.jumbotron-img {  
     padding: 0px;
 }
 #jumbotron-img {
-    
     max-width: 100%;
 }
+
 .about{
-    height: 500px;
+    height: 400px;
     text-align: center;
-    background-color: rgba(39,39,39,.05);
+    background-color: rgba(39,39,39,.9);
+}
+.page-break1 {
+   background-color: rgba(39,39,39,.3); 
+}
+#quote {
+    text-align: center;
+    color: black;
 }
 
-#row {
-    background-color: rgba(39,39,39,.5);
+#row2 {
+  /*  background-color: rgba(39,39,39,.5);*/
+  height: 150px;
 }
-.page-break {
-   background-color: rgba(39,39,39,1); 
+
+
+
+.page-break2 {
+   background-color: rgba(39,39,39,.5); 
+}
+
+.page-break3 {
+    background-color: rgba(39,39,39,.9);
 }
 
 .page-break ul li{
@@ -47,7 +60,7 @@ body {
 }
 
 #tumblr-photo {
-    height: 150px;
+    height: 300px;
     display: inline-block;
 
     margin: auto;
@@ -60,14 +73,16 @@ body {
 
 #page-break2{
     height: 100px;
+    background-color: rgba(39,39,39,.5);
 }
 
 .projects {
     background-color: rgba(39,39,39,.3);
 }
 
+
 .glow {
-    webkit-filter: blur(5px);
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     box-shadow: 10px 15px 45px #fff;
 }
@@ -75,6 +90,7 @@ body {
 .page-header {
     text-align: center;
 }
+
 .form-fill{
     position: relative;
     padding-bottom: 85%;
@@ -90,6 +106,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .well {
     text-align: center;
 }
