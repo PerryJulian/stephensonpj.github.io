@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <title>Perry Stephenson | Virginia Commonwealth University | Computer Science - Senior</title>
@@ -15,7 +16,7 @@
     <!--Navigation Bar-->
     
     <div class="nav navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid" id="changepadding">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -23,11 +24,10 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand" href="#">PERRYJULIAN</a>
+                    <a class="navbar-brand" id="newcolor" href="#">PERRYJULIAN.</a>
             </div>
             <div class="collapse navbar-collapse pull-right">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home">HOME</a></li>
+                <ul class="nav navbar-nav" id="target">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#projects">PORTFOLIO</a></li>
@@ -37,39 +37,65 @@
         </div>
     </div>
     
-    <!--Home-->
+    <!--About-->
     
-    <div class="jumbotron" id="home">
-        <div class="container-fluid jumbotron-img">
-            <img id="jumbotron-img" class="img-responsive" src="background_img1.jpg">  
+    <div class="jumbotron" id="about">
+        <div class="container-fluid full-width">
+            <div class="row" id="jumbotron-row">
+                <div class="col-xs-12  jumbotron-img">
+                    <img id="jumbotron-img" class="img-responsive" src="background_img2.jpg">  
+                </div>
+            </div>
+            <div class="row" id="about-row">
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-xs-12 col-md-6" id="about-text">
+                    <table style="margin-top: 40px"><!--Remove style from this area-->
+                        <tr>
+                            <td>
+                                <p>New to the web development field, I am currently a student
+                                finishing up my undergrad at VCU in Richmond, VA.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>My programming background has given me the skills to focus on how
+                                we interact with web content to create a unique yet natural
+                                feeling experience that can enhance the quality of any webpage.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>When I'm not behind a computer, you can probably find me
+                                exploring at the river or binge watching HBO.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="got" style="font-size: .40em"><i>Winter Is Coming</i></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     
     <!--About-->
     
-    <div class="about" id="about">
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+    
     
     <!--Page Break 1-->
     
     <div class="page-break page-break1"><!--hidden-xs-->
         <div class="container-fluid">
             <div class="row" id="row1">
-                <div class="col-xs-12">   
-                    <div id="quote">
-                        <p>"Design is not just what it looks like and feels like. Design is how it works."</p>
+                <div class="col-xs-12" id="quote">   
+                    
+                        <p style="font-size: 1.5em"><strong>"Design is not just what it looks like and feels like. Design is how it works."</strong></p>
                         <p>- Steve Jobs</p>
-                    </div>
+                    
                 </div>             
             </div>
         </div>    
@@ -87,7 +113,7 @@
             
             <div class="col-md-5">
                 <div class="page-header">
-                    <h1>Programming Knowledge</h1>
+                    <h1 id="experience-header">Programming Background</h1>
                 </div>
                 <div>
 
@@ -116,12 +142,12 @@
                                 </li>
                                 <li role="presentation">
                                     <a href="#version-control" aria-controls="profile" role="tab" data-toggle="pill">
-                                        Version Control Systems
+                                        Version Control Management
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <a href="#mobile-os" aria-controls="messages" role="tab" data-toggle="pill">
-                                        Mobile OS
+                                        Mobile OS Development
                                     </a>
                                 </li>
                             </ul>
@@ -204,7 +230,7 @@
             
             <div class="col-md-3">
                 <div class="page-header">
-                    <h1>Education</h1>
+                    <h1 id="experience-header">Education</h1>
                 </div>
                 <br>
                 <h4><strong>Virginia Commonwealth University</strong></h4>
@@ -304,6 +330,8 @@
     
     
     <!--JQUERY-->
+    
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!--<script>
         $('document').ready(function() {
@@ -315,7 +343,7 @@
     <script>
         $('.navbar-nav a').click(function(){
                 var link = $(this).attr('href');
-                var position = $(link).offset().top ;
+                var position = $(link).offset().top +20 ;
             $('body').animate({scrollTop:position},1000);   
         });
     </script>

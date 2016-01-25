@@ -1,37 +1,127 @@
 body {
-    position: relative;
-   
+    position: relative;  
 }
+
 .navbar-default {
-    background-color: rgba(39,39,39,1); 
+    background-color: rgba(39,39,39,1);
+    border-bottom: 2px solid white;
+}
+#changepadding{
+    padding:0px;
+}
+#newcolor{
+     color: #009898;
 }
 
 .navbar-nav {
     background-color: rgba(39,39,39,.9);
 }
+
+.navbar-nav li {
+    border-left: 1px solid #FFBF40;
+}
+
+#target a:hover {
+    background-color: #A60000;
+    color: #FFAA00;
+}
+
 .jumbotron {
-    background-color: rgba(0,0,0, 1);
+    background-color: rgba(39,39,39, 1);
     padding-bottom: 0px;
     margin-bottom: 0px;
+}
+.full-width {
+    padding: 0px;
 }
 .jumbotron-img {  
     padding: 0px;
 }
-#jumbotron-img {
-    max-width: 100%;
+#jumbotron-row{
+    margin:0px;
 }
 
-.about{
-    height: 400px;
+#jumbotron-img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#about{
     text-align: center;
-    background-color: rgba(39,39,39,.9);
+    background-color: rgba(39,39,39,1);
+    color: white;
+    font-size: 2em;
+    font-family: 'Handlee', cursive;
 }
+
+#about-row {
+    margin: 0px;
+    
+    border-left-width:5px;
+    border-left-style: solid;
+    border-right-width:0px;
+    border-right-style: solid;
+    
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(rgba(0,233,233,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;    
+    -o-border-image: -o-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
+}
+/*#about-text {
+    border-left: 45px solid #A60000;
+    border-right: 2px solid #A60000;
+}*/
+
+#about-text {
+    padding-top: 80px;
+    padding-bottom: 5px;
+
+    /*ABOUT*/
+    
+
+}
+
+#got{
+    color: #00E9E9;
+}
+
 .page-break1 {
-   background-color: rgba(39,39,39,.3); 
+   background-color: rgba(39,39,39,1);
+   border-top: 2px solid #00E9E9;
+   border-bottom: 2px solid white;
+   
+   
+   
 }
+
 #quote {
     text-align: center;
-    color: black;
+    color: rgba(255,191,64,1);
+    font-family: 'Handlee', cursive;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-left-width:5px;
+    
+    border-left-style: solid;
+    border-right-width:0px;
+    border-right-style: solid;
+    
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,233,233,1)), to(rgba(255,255,255,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;    
+    -o-border-image: -o-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
+}
+
+.education {
+    background-color: rgba(39,39,39,1);
+}
+
+#experience-header {
+    color: rgba(166,111,0,1);
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #row2 {
@@ -43,6 +133,12 @@ body {
 
 .page-break2 {
    background-color: rgba(39,39,39,.5); 
+}
+
+#experience{
+    padding-top:80px;
+    border-image-source: ;
+    background-color: rgba(39,39,39,.1);
 }
 
 .page-break3 {
@@ -82,9 +178,9 @@ body {
 
 
 .glow {
-    -webkit-filter: blur(5px);
+   /* -webkit-filter: blur(5px);
     filter: blur(5px);
-    box-shadow: 10px 15px 45px #fff;
+    box-shadow: 10px 15px 45px #fff;*/
 }
 
 .page-header {
