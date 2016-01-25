@@ -77,10 +77,6 @@ body {
 #about-text {
     padding-top: 80px;
     padding-bottom: 5px;
-
-    /*ABOUT*/
-    
-
 }
 
 #got{
@@ -90,18 +86,15 @@ body {
 .page-break1 {
    background-color: rgba(39,39,39,1);
    border-top: 2px solid #00E9E9;
-   border-bottom: 2px solid white;
-   
-   
-   
+   border-bottom: 2px solid white; 
 }
 
 #quote {
     text-align: center;
     color: rgba(255,191,64,1);
     font-family: 'Handlee', cursive;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-bottom: 40px;
     border-left-width:5px;
     
     border-left-style: solid;
@@ -120,29 +113,118 @@ body {
 }
 
 #experience-header {
-    color: rgba(166,111,0,1);
+    color: rgba(39,39,39,1);
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-#row2 {
-  /*  background-color: rgba(39,39,39,.5);*/
-  height: 150px;
-}
-
-
-
-.page-break2 {
-   background-color: rgba(39,39,39,.5); 
-}
 
 #experience{
     padding-top:80px;
-    border-image-source: ;
-    background-color: rgba(39,39,39,.1);
+    padding-bottom: 40px;
+    background-color: rgba(39,39,39,.3);   
+    border-left-width:5px;
+    border-left-style: solid;
+    border-right-width:0px;
+    border-right-style: solid;   
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(39,39,39,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;    
+    -o-border-image: -o-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
+}
+
+.skill-tabs a {
+    border-top: 3px solid #BF8F30;
+    border-bottom: 3px solid #BF8F30;
+}
+.skill-tabs a:link, .skill-tabs a:visited{
+    background-color: rgba(39,39,39,1);
+    border-radius: 0px;
+    color: #BF8F30;
+}
+
+.skill-tabs > li.active > a,
+.skill-tabs > a:hover,
+.skill-tabs > li.active > a:focus {
+    background-color: rgba(39,39,39,.7);
+}
+
+.software-tabs a {
+    /*border-bottom: 1px solid #FFBF40;*/
+}
+
+.software-tabs a:link, .software-tabs a:visited {
+    background-color: rgba(39,39,39,.7);
+    border-radius: 0px;
+    color: #FF0000;
+}
+
+.software-tabs > li.active > a,
+.software-tabs > a:hover,
+.software-tabs > li.active > a:focus {
+    background-color: #009898;
+    color: #FFFFFF;
+}
+
+.webdev-tabs a {
+   /* border-bottom: 1px solid #FFBF40;*/
+}
+
+.webdev-tabs a:link, .webdev-tabs a:visited {
+    background-color: rgba(39,39,39,.7);
+    border-radius: 0px;
+    color: #FF0000;
+}
+
+.webdev-tabs > li.active > a,
+.webdev-tabs > a:hover,
+.webdev-tabs > li.active > a:focus {
+    background-color: #009898;
+    color: #FFFFFF;
+}
+
+#experience-category {
+    margin: 0px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.page-break2 {
+    background-color: rgba(39,39,39,1);
+    border-top: 0px solid rgba(39,39,39,1);
+    border-bottom: 0px solid #FFAA00;
+}
+
+#projects {
+    border-left-width:5px;
+    border-left-style: solid;
+    border-right-width:0px;
+    border-right-style: solid;   
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(rgba(2,48,154,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;    
+    -o-border-image: -o-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
+}
+
+#row3 {
+  /*  background-color: rgba(39,39,39,.5);*/
+  height: 150px;
+  
+  border-left-width:5px;
+    border-left-style: solid;
+    border-right-width:0px;
+    border-right-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(rgba(2,48,154,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
+    -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;    
+    -o-border-image: -o-linear-gradient(rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), rgba(2,48,154,1)) 1 100%;
 }
 
 .page-break3 {
     background-color: rgba(39,39,39,.9);
+    border-top: 3px solid #02309A;
 }
 
 .page-break ul li{
