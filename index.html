@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Handlee|Forum' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <title>Perry Stephenson | Virginia Commonwealth University | Computer Science - Senior</title>  
 </head>
@@ -54,7 +53,7 @@
                         <tr>
                             <td>
                                 <p>New to the web development field, I am currently a student
-                                finishing up my undergrad at <span style="color: #FFAA00">VCU</span> in RVA.</p>
+                                finishing up my undergrad at <span style="color: #FFAA00"><br>Virginia Commonwealth University</span> in Richmond Virginia.</p>
                             </td>
                         </tr>
                         <tr>
@@ -66,8 +65,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>When I'm not behind a computer, you can probably find me
-                                exploring at the river or binge watching HBO.</p>
+                                <p></p>
                             </td>
                         </tr>
                         <tr>
@@ -108,7 +106,7 @@
             
             <div class="col-md-7">
                 <div class="page-header">
-                    <h1 id="section-header">Programming Background</h1>
+                    <h1 class="section-header">Programming Background</h1>
                 </div>
                 <div>
                     <p style="margin: 0px"><strong>Pick a category:</strong></p>
@@ -229,7 +227,7 @@
             
             <div class="col-md-3">
                 <div class="page-header">
-                    <h1 id="section-header">Education</h1>
+                    <h1 class="section-header">Education</h1>
                 </div>
                 <br>
                 <h4><strong>Virginia Commonwealth University</strong></h4>
@@ -277,7 +275,7 @@
                 
             </div>
             <div class="col-md-8">
-                <div class="page-header"><h1 id="section-header">Featured Projects</h1></div>
+                <div class="page-header"><h1 class="section-header">Featured Projects</h1></div>
                 <div class="well glow" style="text-align: center"> 
                     <br><br><br><br><br>
                     <h3>Coming Soon...</h3>
@@ -311,20 +309,18 @@
                 
             </div>
             <div class="col-md-2">
-                 <div class="page-header">
-                    <h1 id="section-header">Connect</h1>
-                 </div>
+                 <br><br><br><br><br><br>
                  <div>
                     <a href="https://www.linkedin.com/in/stephensonperryj"><img class="img-responsive" id="connect" src="linkedin-btn"></a>
                     <br>
                     <a href="https://www.instagram.com/psjulian/"><img class="img-responsive" id="connect" src="insta"></a>
                     <br>
-                    <a href="#"><img class="img-responsive" id="connect" src="twitter.png"></a>
+                    <a href="https://twitter.com/_dontmentionit"><img class="img-responsive" id="connect" src="twitter.png"></a>
                  </div>
             </div>
             <div class="col-md-6">
                 <div class="page-header">
-                    <h1 id="section-header">Contact Me</h1>
+                    <h1 class="section-header">Contact</h1>
                 </div>
                 <div class="well form-fill">
                     <h4>Send me a message at:</h4>
@@ -349,15 +345,18 @@
   
     <!--JQUERY-->
     
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!--<script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script>
         $('document').ready(function() {
+            var controller = new ScrollMagic.Controller();
+            
+            var scene1 = new ScrollMagic.Scene();
                 
         });  
-    </script>-->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    -->
+    </script>
+    
     <script>
         $('.navbar-nav a').click(function(){
                 var link = $(this).attr('href');

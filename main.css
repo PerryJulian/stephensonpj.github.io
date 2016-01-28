@@ -60,15 +60,15 @@ body {
     background-color: rgba(39,39,39,1);
     color: white;
     font-size: 2em;
-    font-family: 'Handlee', cursive;
+    font-family: 'Forum', cursive;
 }
 
 #about-row {
     margin: 0px;
     
-    border-left-width:5px;
+    border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;
     
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(rgba(0,233,233,1))) 1 100%;
@@ -99,10 +99,10 @@ body {
     font-family: 'Handlee', cursive;
     padding-top: 45px;
     padding-bottom: 40px;
-    border-left-width:5px;
+    border-left-width:2px;
     
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;
     
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,233,233,1)), to(rgba(255,255,255,1))) 1 100%;
@@ -116,19 +116,29 @@ body {
     background-color: rgba(39,39,39,1);
 }
 
-#section-header {
-    color: rgba(39,39,39,1);
+.section-header {
     font-family: 'Forum', cursive;
 }
+#experience .section-header {
+   color: white;
+}
+#projects .section-header {
+   color: #FFAA00;
+}
+#contact .section-header {
+   color: #004DFF;
+}
+
+
 
 
 #experience{
     padding-top:80px;
     padding-bottom: 40px;
     background-color: rgba(39,39,39,.3);   
-    border-left-width:5px;
+    border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;   
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(39,39,39,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
@@ -194,7 +204,7 @@ body {
 }
 
 #row2 {
-    border-bottom: 3px solid #FFAA00;
+    border-bottom: 2px solid #FFAA00;
 }
 
 .page-break2 {
@@ -202,9 +212,9 @@ body {
     border-top: 0px solid rgba(39,39,39,1);
     border-bottom: 0px solid #FFAA00;
     
-    border-left-width:5px;
+    border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;   
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#FFBF40)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;
@@ -216,9 +226,9 @@ body {
 #projects {
     padding-top:40px;
     padding-bottom: 60px;
-    border-left-width:5px;
+    border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;   
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFBF40), to(rgba(39,39,39,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;
@@ -231,9 +241,9 @@ body {
   /*  background-color: rgba(39,39,39,.5);*/
   height: 150px;
   
-  border-left-width:5px;
+  border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#004DFF)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), #004DFF) 1 100%;
@@ -244,8 +254,8 @@ body {
 
 .page-break3 {
     background-color: rgba(39,39,39,1);
-    border-top: 3px solid rgba(39,39,39,1);
-    border-bottom: 3px solid #004DFF;
+    border-top: 2px solid rgba(39,39,39,1);
+    border-bottom: 2px solid #004DFF;
 }
 
 .page-break ul li{
@@ -276,18 +286,18 @@ body {
 }
 
 .projects {
-    background-color: rgba(39,39,39,.3);
+    background-color: rgba(39,39,39,.7);
 }
 
 .contact {
+   padding-top: 40px;
     background-color: rgba(39,39,39,.3);
 }
 
 #contact {
-    padding-top:40px;
-    border-left-width:5px;
+    border-left-width:2px;
     border-left-style: solid;
-    border-right-width:5px;
+    border-right-width:2px;
     border-right-style: solid;   
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#004DFF), to(#00FFFF)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(#004DFF, #00FFFF) 1 100%;
@@ -316,7 +326,7 @@ body {
 }
 
 .footer {
-    border-top: 5px solid #00FFFF;
+    border-top: 2px solid #00FFFF;
     background-color: rgba(39,39,39,1);
     color: rgba(39,39,39,1);
     text-align: center;
