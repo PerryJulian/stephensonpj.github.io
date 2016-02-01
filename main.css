@@ -6,20 +6,15 @@ body {
 
 .navbar-default {
     background-color: rgba(39,39,39,1);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
-#changepadding {
-    padding:0px;
-}
-
-#newcolor {
+#brand {
      color: #009898;
-     /*font-family: 'Expletus Sans', cursive;*/
 }
 
 .navbar-nav {
-    background-color: rgba(39,39,39,.9);
+    background-color: rgba(39,39,39,.5);
 }
 
 .navbar-nav li {
@@ -27,7 +22,7 @@ body {
 }
 
 #target a:hover {
-    background-color: #A60000;
+    background-color: #009898;
     color: #FFAA00;
 }
 
@@ -89,8 +84,8 @@ body {
 
 .page-break1 {
    background-color: rgba(39,39,39,1);
-   border-top: 2px solid #00E9E9;
-   border-bottom: 2px solid white; 
+   border-top: 1px solid #00E9E9;
+   border-bottom: 1px solid white; 
 }
 
 #quote {
@@ -203,6 +198,27 @@ body {
     padding-bottom: 5px;
 }
 
+.row-of-photos {
+    margin: auto;
+    text-align: center;
+}
+
+#tumblr-photo {
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+}
+
+#photo-row-bottom {
+    margin: auto;
+    padding: 0px;
+}
+
+#page-break2{
+    height: 100px;
+    background-color: rgba(39,39,39,.5);
+}
+
 #row2 {
     border-bottom: 2px solid #FFAA00;
 }
@@ -256,6 +272,7 @@ body {
     background-color: rgba(39,39,39,1);
     border-top: 2px solid rgba(39,39,39,1);
     border-bottom: 2px solid #004DFF;
+    box-shadow: 0px 3px 15px #004DFF;
 }
 
 .page-break ul li{
@@ -263,35 +280,17 @@ body {
     background-color: black;
 }
 
-.row-of-photos {
-    margin: auto;
-    text-align: center;
-}
-
-#tumblr-photo {
-    height: 300px;
-    display: inline-block;
-
-    margin: auto;
-}
-
-#photo-row-bottom {
-    margin: auto;
-    padding: 0px;
-}
-
-#page-break2{
-    height: 100px;
-    background-color: rgba(39,39,39,.5);
+#project-underline {
+   border-bottom: 1px solid #FFBF40;
 }
 
 .projects {
-    background-color: rgba(39,39,39,.7);
+    background-color: rgba(39,39,39,.5);
 }
 
 .contact {
    padding-top: 40px;
-    background-color: rgba(39,39,39,.3);
+   background-color: rgba(39,39,39,.6);
 }
 
 #contact {
@@ -313,29 +312,61 @@ body {
 }
 
 #connect-links {
-   width: 100px;
+   max-width: 100px;
    margin: auto;
+   background-color: rgba(39,39,39,.5);
+    box-shadow: 2px 4px 15px #00FFFF /*-2px -3px 15px #004DFF*/;
+}
+
+#follow-underline {
+   border-bottom: 1px solid #004DFF;
 }
 
 #follow-header {
-   color: #00FFFF;
+   color: #004DFF;
+   margin: auto;
+   background-color: rgba(39,39,39,.4);
+   box-shadow: /*-2px -3px 15px #004DFF /*-2px 7px 15px #004DFF*/;
+   border: 1px solid #00FFFF;
+   width: 200px;
+}
+
+#contact-underline {
+   border-bottom: 1px solid #009898;
 }
 
 #contact-header {
-   color: #004DFF   
+   color: #009898;
+   margin: auto;
+   background-color: rgba(39,39,39,.5);
+   border: 1px solid #004DFF;
+   width: 200px;
+}
+
+#contact .form-fill{
+   text-align: center;
+   border: 1px solid #004DFF;
+   box-shadow: 2px 4px 15px #004DFF /*-2px 7px 15px #004DFF*/;
+}
+
+.form-fill {
+   max-width: 400px;
+   background-color: rgba(39,39,39,.4);
+   margin:auto;
 }
 
 .glow {
     -webkit-filter: blur(5px);
     filter: blur(5px);
     box-shadow: 2px 3px 15px #FFBF40, -2px -3px 15px #FFBF40;
+    background-color: rgba(39,39,39,.5)
 }
 
 .glow:hover {
    filter: blur(0px);
    -webkit-filter: blur(0px);
-   animation: ease-in-out (100);
 }
+
 .page-header {
     text-align: center;
 }
@@ -346,7 +377,7 @@ body {
 
 .footer {
     border-top: 2px solid #00FFFF;
-    background-color: rgba(39,39,39,1);
-    color: rgba(39,39,39,1);
+    background-color: rgba(39,39,39,.8);
+    color: #009898;
     text-align: center;
 }
