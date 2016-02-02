@@ -130,7 +130,7 @@ body {
 #experience{
     padding-top:80px;
     padding-bottom: 40px;
-    background-color: rgba(39,39,39,.3);   
+    background-color: rgba(39,39,39,.5);   
     border-left-width:2px;
     border-left-style: solid;
     border-right-width:2px;
@@ -151,12 +151,12 @@ body {
     border-radius: 0px;
     color: #BF8F30;
 }
-
+/*
 .skill-tabs > li.active > a,
 .skill-tabs > a:hover,
 .skill-tabs > li.active > a:focus {
     background-color: #009898;
-}
+}*/
 
 .software-tabs a {
     /*border-bottom: 1px solid #FFBF40;*/
@@ -167,13 +167,13 @@ body {
     border-radius: 0px;
     color: #FF0000;
 }
-
+/*
 .software-tabs > li.active > a,
 .software-tabs > a:hover,
 .software-tabs > li.active > a:focus {
     background-color: #009898;
     color: #FFFFFF;
-}
+}*/
 
 .webdev-tabs a {
    /* border-bottom: 1px solid #FFBF40;*/
@@ -184,18 +184,41 @@ body {
     border-radius: 0px;
     color: #FF0000;
 }
-
+/*
 .webdev-tabs > li.active > a,
 .webdev-tabs > a:hover,
 .webdev-tabs > li.active > a:focus {
     background-color: #009898;
     color: #FFFFFF;
+}*/
+
+.panel {
+   background-color: rgba(39,39,39,.9);
+   border: 2px solid #008E8E;
+}
+
+.accordion-heading h4{
+   background-color: rgba(39,39,39,1);
+   color: red;
+   margin:0px;
+   padding: 5px 0px 5px 0px;
+}
+
+.accordion-body p {
+   background-color: rgba(39,39,39,0);
+   color: #008E8E;
+   padding: 2px 3px 2px 3px;
 }
 
 #experience-category {
     margin: 0px;
     padding-top:5px;
     padding-bottom: 5px;
+}
+
+#experience-content {
+   background-color: rgba(39,39,39,0);
+   text-align: center;
 }
 
 .row-of-photos {
@@ -227,6 +250,7 @@ body {
     background-color: rgba(39,39,39,1);
     border-top: 0px solid rgba(39,39,39,1);
     border-bottom: 0px solid #FFAA00;
+    box-shadow: 0px 4px 5px #FFAA00;
     
     border-left-width:2px;
     border-left-style: solid;
@@ -253,6 +277,28 @@ body {
     border-image: linear-gradient(to bottom, #FFBF40, rgba(39,39,39,1)) 1 100%;
 }
 
+.page-break ul li{
+    display: inline-block;
+    background-color: black;
+}
+
+#project-underline {
+   border-bottom: 1px solid #FFBF40;
+}
+
+#project-header {
+   color: #004DFF;
+   margin: auto;
+   background-color: rgba(39,39,39,.4);
+   box-shadow: 0px -3px 15px #00FFFF /*-2px 7px 15px #004DFF*/;
+   border: 1px solid #00FFFF;
+   /*width: 200px;*/
+}
+
+.projects {
+    background-color: rgba(39,39,39,.7);
+}
+
 #row3 {
   /*  background-color: rgba(39,39,39,.5);*/
   height: 150px;
@@ -273,19 +319,6 @@ body {
     border-top: 2px solid rgba(39,39,39,1);
     border-bottom: 2px solid #004DFF;
     box-shadow: 0px 3px 15px #004DFF;
-}
-
-.page-break ul li{
-    display: inline-block;
-    background-color: black;
-}
-
-#project-underline {
-   border-bottom: 1px solid #FFBF40;
-}
-
-.projects {
-    background-color: rgba(39,39,39,.5);
 }
 
 .contact {
@@ -315,7 +348,7 @@ body {
    max-width: 100px;
    margin: auto;
    background-color: rgba(39,39,39,.5);
-    box-shadow: 2px 4px 15px #00FFFF /*-2px -3px 15px #004DFF*/;
+   box-shadow: 0px 4px 15px #00FFFF /*-2px -3px 15px #004DFF*/;
 }
 
 #follow-underline {
@@ -326,7 +359,7 @@ body {
    color: #004DFF;
    margin: auto;
    background-color: rgba(39,39,39,.4);
-   box-shadow: /*-2px -3px 15px #004DFF /*-2px 7px 15px #004DFF*/;
+   /*box-shadow: /*-2px -3px 15px #004DFF /*-2px 7px 15px #004DFF;*/
    border: 1px solid #00FFFF;
    width: 200px;
 }
@@ -346,7 +379,7 @@ body {
 #contact .form-fill{
    text-align: center;
    border: 1px solid #004DFF;
-   box-shadow: 2px 4px 15px #004DFF /*-2px 7px 15px #004DFF*/;
+   /*box-shadow: 2px 4px 15px #004DFF /*-2px 7px 15px #004DFF*/;*/
 }
 
 .form-fill {
@@ -356,9 +389,9 @@ body {
 }
 
 .glow {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    box-shadow: 2px 3px 15px #FFBF40, -2px -3px 15px #FFBF40;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    /*box-shadow: 2px 3px 15px #FFBF40, -2px -3px 15px #FFBF40;*/
     background-color: rgba(39,39,39,.5)
 }
 
@@ -379,5 +412,5 @@ body {
     border-top: 2px solid #00FFFF;
     background-color: rgba(39,39,39,.8);
     color: #009898;
-    text-align: center;
+    box-shadow: 0px -2px 15px #00FFFF;
 }
