@@ -22,7 +22,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand" id="brand" href="#">PERRY<span style="color: #FFAA00">JULIAN</span><span style="color: #009898">.</span></a>
+                    <a class="navbar-brand" id="brand" href="#"><span style="color: white">PERRY</span><span style="color: #FFAA00">JULIAN</span><span style="color: #009898">.</span></a>
             </div>
             <div class="collapse navbar-collapse pull-right">
                 <ul class="nav navbar-nav" id="target">
@@ -40,15 +40,15 @@
     <div class="jumbotron" id="about">
         <div class="container-fluid full-width">
             <div class="row" id="jumbotron-row">
-                <div class="col-xs-12  jumbotron-img">
-                    <img id="jumbotron-img" class="img-responsive" src="background_img2.jpg">  
+                <div class="col-xs-12  jumbotron-img slide-left">
+                    <img id="jumbotron-img" class="img-responsive" src="IMG_5102.jpg">  
                 </div>
             </div>
             <div class="row" id="about-row">
                 <div class="col-md-3">
                     
                 </div>
-                <div class="col-xs-12 col-md-6" id="about-text">
+                <div class="col-xs-12 col-md-6 slide-left" id="about-text">
                     <table style="margin-top: 40px"><!--Remove style from this area-->
                         <tr>
                             <td>
@@ -382,7 +382,7 @@
                 <div class="col-md-1">      
                 </div>
                 <div class="col-md-10">
-                    <div class="row-of-photos">
+                    <div class="row-of-photos slide-left">
                         <ul id="photo-row-bottom">
                             <div class="row">
                                 <li><img class="img-responsive" id="tumblr-photo" src="https://41.media.tumblr.com/3e6d10bd713ad29fcbd07e8cfa613012/tumblr_mnnc0rdg1C1qj59pro1_250.jpg"></li><!--
@@ -441,38 +441,47 @@
     
     <div class="contact" id="contact">
         <div class="container-fluid">
-            <div class="col-md-2">
-                
-            </div>
-            <div class="col-md-2">
-                 <div class="page-header" id="follow-underline">
-                    <h1 class="section-header well" id="follow-header">Follow</h1>
-                 </div>
-                 <br>
-                 <div class=well id="connect-links">
-                    <a href="https://www.linkedin.com/in/stephensonperryj"><img class="img-responsive" id="connect" src="linkedin-btn"></a>
-                    <br>
-                    <a href="https://www.instagram.com/psjulian/"><img class="img-responsive" id="connect" src="insta"></a>
-                    <br>
-                    <a href="https://twitter.com/_dontmentionit"><img class="img-responsive" id="connect" src="twitter.png"></a>
-                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="page-header" id="contact-underline">
-                    <h1 class="section-header well" id="contact-header">Contact</h1><!-- remove in-line style-->
+            <div class="row">
+                <div class="col-xs-12" id="contact-section">
+                    <div class="page-header" id="contact-underline">
+                        <h1 class="section-header well" id="contact-header">Ways To Reach Me</h1><!-- remove in-line style-->
+                    </div>
                 </div>
-                <br>
-                <p style="text-align: center"><strong><u>Looking for help customizing a responsive webpage for your business, blog or portfolio?</u></strong></p>
-                <br>
-                <div class="well form-fill">
-                    <h4><strong>Send me an email at:</strong></h4>
-                    <p style="color: #009898"><u>stephensonperryj@gmail.com</u></p>
-                    <h4><strong>Leave a voice or text message at:</strong></h4>
-                    <p><i><span style="color: #009898"><u>804-617-4751</u></span><strong> - recently updated</strong></i></p>
+            </div>
+            <div class="row">
+                <div class="col-xs-1">
+                        
+                </div>
+                <div class="col-xs-10" id="contact-section">           
+                        <br>
+                        <p style="color: white"><u>Looking for help customizing a responsive webpage for your business, blog or portfolio?</u></p>
+                        <br>
+                    <div class="well form-fill">
+                        <h4><strong>Send me an email at:</strong></h4>
+                        <p style="color: white"><u>stephensonperryj@gmail.com</u></p>
+                        <h4><strong>Leave a voice or text message at:</strong></h4>
+                        <p><i><span style="color: white"><u>804-617-4751</u></span><strong> - recently updated</strong></i></p>
+                    </div><br>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-xs-12" id="follow-header">
+                     <!--<div class="page-header" id="follow-underline">
+                        <h1 class="section-header well" id="follow-header">Follow</h1>
+                     </div>-->
+                     <br>
+                     <div class=well id="connect-links">
+                        <a href="https://www.linkedin.com/in/stephensonperryj"><img class="img-responsive" id="connect" src="linkedin-btn"></a>
+                        <br>
+                        <a href="https://www.instagram.com/psjulian/"><img class="img-responsive" id="connect" src="insta"></a>
+                        <br>
+                        <a href="https://twitter.com/_dontmentionit"><img class="img-responsive" id="connect" src="twitter.png"></a>
+                     </div><br>
                 </div>
             </div>
         </div>
-    <br><br><br><br><br><br><br><br><br><br>
+
     </div>
     
     <!--Footer-->
@@ -490,13 +499,19 @@
     <!--JQUERY-->
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="jquery.fadethis.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script>
         $('document').ready(function() {
-            var controller = new ScrollMagic.Controller();
             
-            var scene1 = new ScrollMagic.Scene();
+            
+
+$(window).fadeThis();
+
+
+
                 
         });  
     </script>

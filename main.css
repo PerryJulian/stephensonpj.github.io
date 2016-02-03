@@ -1,5 +1,6 @@
 body {
    position: relative;
+   background-color:  rgba(39,39,39,.6);
 }
 .wrapper {
    position: absolute;
@@ -139,7 +140,7 @@ body {
 #experience{
     padding-top:80px;
     padding-bottom: 40px;
-    background-color: rgba(39,39,39,.5);   
+    background-color: rgba(39,39,39,0);   
     border-left-width:2px;
     border-left-style: solid;
     border-right-width:2px;
@@ -203,7 +204,8 @@ body {
 
 .panel {
    background-color: rgba(39,39,39,.9);
-   border: 2px solid #008E8E;
+   border: 1px solid #008E8E;
+   border-radius: 0px;
 }
 
 .accordion-heading h4{
@@ -331,9 +333,11 @@ body {
 }
 
 .contact {
-   padding-top: 40px;
-   background-color: rgba(39,39,39,.6);
+   padding-top: 0px;
+   background-color: rgba(39,39,39,.4);
+   text-align: center;
 }
+   
 
 #contact {
     border-left-width:2px;
@@ -351,49 +355,60 @@ body {
     max-width: 50px;
     margin: auto;
     border-radius: 10px;
+    
 }
 
 #connect-links {
    max-width: 100px;
    margin: auto;
    background-color: rgba(39,39,39,.5);
-   box-shadow: 0px 4px 15px #00FFFF /*-2px -3px 15px #004DFF*/;
-}
-
-#follow-underline {
-   border-bottom: 1px solid #004DFF;
+   box-shadow: 3px 4px 15px #00FFFF, -3px 4px 15px #004DFF;
 }
 
 #follow-header {
-   color: #004DFF;
+   color: #FFFFFF;
    margin: auto;
-   background-color: rgba(39,39,39,.4);
-   /*box-shadow: /*-2px -3px 15px #004DFF /*-2px 7px 15px #004DFF;*/
-   border: 1px solid #00FFFF;
-   width: 200px;
+   padding-bottom: 100px;
+   /*background-color: rgba(39,39,39,.4);*/
+   box-shadow: 0px 0px 5px rgba(0,0,0,.35); /*-2px 7px 15px #004DFF;*/
+   border: 0px solid #00FFFF;
+   width: 100%;
+   background-color: rgba(39,39,39,.6);
 }
 
 #contact-underline {
-   border-bottom: 1px solid #009898;
+   border-bottom: 0px solid #009898;
+   box-shadow: 0px 0px 5px rgba(0,0,0,.35);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 80px;
+}
+
+#contact-section {
+   width: 100%;
+   padding: 0px;
+   background-color: rgba(39,39,39,.6);
 }
 
 #contact-header {
-   color: #009898;
+   color: #FFFFFF;
    margin: auto;
    background-color: rgba(39,39,39,.5);
-   border: 1px solid #004DFF;
-   width: 200px;
+   border: 0px solid #004DFF;
 }
 
 #contact .form-fill{
    text-align: center;
-   border: 1px solid #004DFF;
-   /*box-shadow: 2px 4px 15px #004DFF /*-2px 7px 15px #004DFF;*/
+   border: 0px solid #004DFF;
+   border: 1px solid rgba(0,0,0,0.1);
+   box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+   background-color: #949494;
+   border-radius: 0px;
 }
 
 .form-fill {
-   max-width: 400px;
-   background-color: rgba(39,39,39,.4);
+   max-width: 500px;
+   background-color: rgba(39,39,39,.2);
    margin:auto;
 }
 
@@ -415,6 +430,7 @@ body {
 
 .well {
     text-align: center;
+    border-radius: 0px;
 }
 
 .footer {
