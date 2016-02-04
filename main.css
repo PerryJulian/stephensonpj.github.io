@@ -275,8 +275,8 @@ body {
 }
 
 #projects {
-    padding-top:40px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-left-width:2px;
     border-left-style: solid;
     border-right-width:2px;
@@ -307,7 +307,8 @@ body {
 }
 
 .projects {
-    background-color: rgba(39,39,39,.7);
+    background-color: rgba(39,39,39,.4);
+    padding-top: 0px;
 }
 
 #row3 {
@@ -359,17 +360,16 @@ body {
 }
 
 #connect-links {
-   max-width: 100px;
+   max-width: 1000px;
    margin: auto;
-   background-color: rgba(39,39,39,.5);
-   box-shadow: 3px 4px 15px #00FFFF, -3px 4px 15px #004DFF;
+   background-color: #949494;
+   /*box-shadow: 3px 4px 15px #00FFFF, -3px 4px 15px #004DFF;*/
 }
 
 #follow-header {
-   color: #FFFFFF;
+   
    margin: auto;
    padding-bottom: 100px;
-   /*background-color: rgba(39,39,39,.4);*/
    box-shadow: 0px 0px 5px rgba(0,0,0,.35); /*-2px 7px 15px #004DFF;*/
    border: 0px solid #00FFFF;
    width: 100%;
@@ -382,6 +382,7 @@ body {
    padding-top: 10px;
    padding-bottom: 10px;
    margin-top: 80px;
+   margin-bottom: 60px;
 }
 
 #contact-section {
@@ -413,15 +414,17 @@ body {
 }
 
 .glow {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
     /*box-shadow: 2px 3px 15px #FFBF40, -2px -3px 15px #FFBF40;*/
-    background-color: rgba(39,39,39,.5)
+    background-color: #949494;
 }
 
 .glow:hover {
    filter: blur(0px);
    -webkit-filter: blur(0px);
+   box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+   border: 1px solid rgba(0,0,0,0.1);
 }
 
 .page-header {
@@ -431,6 +434,7 @@ body {
 .well {
     text-align: center;
     border-radius: 0px;
+    margin-bottom: 0px;
 }
 
 .footer {
@@ -444,3 +448,89 @@ body {
     background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
 }
+
+/**********************************Icons*******************************************/
+
+.social-icons {
+   padding: 0px;
+}
+
+.icon {
+  position: relative;
+  width: 19%;
+  height: 0;
+  margin: auto;
+  padding-bottom: 0px;
+  display: inline-block;
+  
+}
+@media all and (min-width: 640px) {
+  .icon {
+    width: 10%;
+    padding-bottom: 10%;
+      
+  }
+}
+
+.icon a {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0px;
+  background-color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+.icon a:hover {
+  background-color: rgba(39,39,39,.2);
+  background-size: 0%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.icon__name {
+  position: relative;
+  top: 45%;
+  width: 100%;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 0;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.icon:hover .icon__name {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.icon--twitter a {
+  background-color: rgba(39,39,39,1);
+  background-image: url("http://benhodgson.net/codepen/social/twitter-128.png");
+}
+
+.icon--linkedin a {
+  background-color: rgba(39,39,39,1);
+  background-image: url("http://benhodgson.net/codepen/social/linkedin-128.png");
+}
+
+.icon--instagram a {
+  background-color: rgba(39,39,39,1);
+  background-image: url("http://benhodgson.net/codepen/social/instagram-128.png");
+}
+
