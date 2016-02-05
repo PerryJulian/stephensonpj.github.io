@@ -26,7 +26,7 @@
                 </div>
                 <div class="collapse navbar-collapse pull-right">
                     <ul class="nav navbar-nav" id="target">
-                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#about-row">ABOUT</a></li>
                         <li><a href="#experience">EXPERIENCE</a></li>
                         <li><a href="#projects">PORTFOLIO</a></li>
                         <li><a href="#contact">CONTACT</a></li>
@@ -523,7 +523,7 @@
                     <p style="font-size: .75em">Copyright &copy; 2016 perryjulian.com</p>
                 </div>
             </div>
-        </div>
+        </div>0
     </div>
     <!--JQUERY-->
     
@@ -533,24 +533,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script>
-        $('document').ready(function() {
+    $(document).ready(function(){
+ 
+        var height = $("#jumbotron-img").height();
             
+            if(height > 0) {
+                $("#about-row").css("margin-top",height);
+            }
+ 
+        /*Scroll Spy*/
+        
+        
+        $('.navbar-nav a').click(function() {
             
-
-$(window).fadeThis();
-
-
-
-                
-        });  
-    </script>
-    
-    <script>
-        $('.navbar-nav a').click(function(){
-                var link = $(this).attr('href');
-                var position = $(link).offset().top +20 ;
-            $('body').animate({scrollTop:position},2000);   
+            var href = this.hash;
+            
+            $('html, body').animate({scrollTop: $(href).offset().top}, 2300, function(){
+                window.location.hash = href;
+            });    
         });
+        
+        /**/
+        $(window).scroll(function () {
+            
+            var scrollTop = $(window).scrollTop() + 250;
+            var height = $(window).height();
+            
+            $('#jumbotron-row').css({'opacity': ((height - scrollTop) / height)});
+        });
+
+        
+    })    
     </script>
     
     

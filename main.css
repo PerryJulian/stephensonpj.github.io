@@ -5,6 +5,7 @@ body {
 .wrapper {
    position: absolute;
 }
+
 /*Navbar*/
 
 .navbar-default {
@@ -41,13 +42,14 @@ body {
 
 .jumbotron-img {  
     padding: 0px;
-    /*z-index: -99;
-    position: fixed;*/
+    z-index: -99;
+    position: fixed;
     
 }
 
 #jumbotron-row {
     margin: 0px;
+    background-color: rgba(0,0,0,1);
    
 }
 
@@ -55,6 +57,7 @@ body {
     margin: auto;
     max-width: 100%;
     height: auto;
+    
 }
 
 #about{
@@ -71,16 +74,16 @@ body {
     margin: 0px;
     z-index: 100;
     
-    border-left-width:2px;
+    border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;
-    
+    /*
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(rgba(0,233,233,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
     -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;    
-    -o-border-image: -o-linear-gradient(rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;
+    -o-border-image: -o-linear-gradient(rgba(39,39,39,0), rgba(0,233,233,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), rgba(0,233,233,1)) 1 100%;*/
 }
 
 #about-text {
@@ -104,17 +107,17 @@ body {
     font-family: 'Handlee', cursive;
     padding-top: 45px;
     padding-bottom: 40px;
-    border-left-width:2px;
+    border-left-width:0px;
     
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;
-    
+    /*
     -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,233,233,1)), to(rgba(255,255,255,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
     -moz-border-image: -moz-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;    
     -o-border-image: -o-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;*/
 }
 
 .education {
@@ -141,15 +144,15 @@ body {
     padding-top:80px;
     padding-bottom: 40px;
     background-color: rgba(39,39,39,0);   
-    border-left-width:2px;
+    border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;   
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(39,39,39,1))) 1 100%;
+    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(rgba(39,39,39,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
     -moz-border-image: -moz-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;    
     -o-border-image: -o-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;*/
 }
 
 .skill-tabs a {
@@ -204,7 +207,7 @@ body {
 
 .panel {
    background-color: rgba(39,39,39,.9);
-   border: 1px solid #008E8E;
+   border: 0px solid #008E8E;
    border-radius: 0px;
 }
 
@@ -254,38 +257,38 @@ body {
 }
 
 #row2 {
-    border-bottom: 2px solid #FFAA00;
+    border-bottom: 0px solid #FFAA00;
 }
 
 .page-break2 {
     background-color: rgba(39,39,39,1);
     border-top: 0px solid rgba(39,39,39,1);
     border-bottom: 0px solid #FFAA00;
-    box-shadow: 0px 4px 5px #FFAA00;
+    box-shadow: 0px 0px 0px #FFAA00;
     
-    border-left-width:2px;
+    border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;   
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#FFBF40)) 1 100%;
+    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#FFBF40)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;
     -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;    
     -o-border-image: -o-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(39,39,39,1), #FFBF40) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), #FFBF40) 1 100%;*/
 }
 
 #projects {
     padding-top: 0px;
     padding-bottom: 0px;
-    border-left-width:2px;
+    border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;   
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFBF40), to(rgba(39,39,39,1))) 1 100%;
+    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFBF40), to(rgba(39,39,39,1))) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;
     -moz-border-image: -moz-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;    
     -o-border-image: -o-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;
-    border-image: linear-gradient(to bottom, #FFBF40, rgba(39,39,39,1)) 1 100%;
+    border-image: linear-gradient(to bottom, #FFBF40, rgba(39,39,39,1)) 1 100%;*/
 }
 
 .page-break ul li{
@@ -294,15 +297,15 @@ body {
 }
 
 #project-underline {
-   border-bottom: 1px solid #FFBF40;
+   border-bottom: 0px solid #FFBF40;
 }
 
 #project-header {
    color: #004DFF;
    margin: auto;
    background-color: rgba(39,39,39,.4);
-   box-shadow: 0px -3px 15px #00FFFF /*-2px 7px 15px #004DFF*/;
-   border: 1px solid #00FFFF;
+   /*box-shadow: 0px -3px 15px #00FFFF /*-2px 7px 15px #004DFF*/;
+   border: 0px solid #00FFFF;
    /*width: 200px;*/
 }
 
@@ -315,22 +318,22 @@ body {
   /*  background-color: rgba(39,39,39,.5);*/
   height: 150px;
   
-  border-left-width:2px;
+  border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#004DFF)) 1 100%;
+    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#004DFF)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), #004DFF) 1 100%;
     -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), #004DFF) 1 100%;    
     -o-border-image: -o-linear-gradient(rgba(39,39,39,1), #004DFF) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(39,39,39,1), #004DFF) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(39,39,39,1), #004DFF) 1 100%;*/
 }
 
 .page-break3 {
-    background-color: rgba(39,39,39,1);
-    border-top: 2px solid rgba(39,39,39,1);
+    background-color: rgba(39,39,39,0);
+    border-top: 0px solid rgba(39,39,39,1);
     border-bottom: 2px solid #004DFF;
-    box-shadow: 0px 3px 15px #004DFF;
+    box-shadow: 0px 0px 5px #004DFF;
 }
 
 .contact {
@@ -341,15 +344,15 @@ body {
    
 
 #contact {
-    border-left-width:2px;
+    border-left-width:0px;
     border-left-style: solid;
-    border-right-width:2px;
+    border-right-width:0px;
     border-right-style: solid;   
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#004DFF), to(#00FFFF)) 1 100%;
+    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#004DFF), to(#00FFFF)) 1 100%;
     -webkit-border-image: -webkit-linear-gradient(#004DFF, #00FFFF) 1 100%;
     -moz-border-image: -moz-linear-gradient(#004DFF, #00FFFF) 1 100%;    
     -o-border-image: -o-linear-gradient(#004DFF, #00FFFF) 1 100%;
-    border-image: linear-gradient(to bottom, #004DFF, #00FFFF) 1 100%;
+    border-image: linear-gradient(to bottom, #004DFF, #00FFFF) 1 100%;*/
 }
 
 #connect {
@@ -464,7 +467,7 @@ body {
   display: inline-block;
   
 }
-@media all and (min-width: 640px) {
+@media all and (min-width: 10px) {
   .icon {
     width: 10%;
     padding-bottom: 10%;
