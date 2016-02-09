@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Handlee|Forum' rel='stylesheet' type='text/css'>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <title>Perry Stephenson | Virginia Commonwealth University | Computer Science - Senior</title>  
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -44,6 +45,13 @@
                         <img id="jumbotron-img" class="img-responsive" src="IMG_5102.jpg">  
                     </div>
                 </div>
+                <script>
+            var imgheight = $("#jumbotron-img").height();
+            
+            if(imgheight > 0) {
+                $("#about-row").css("margin-top",imgheight);
+            }
+        </script>
                 <div class="row" id="about-row">
                     <div class="col-md-3">
                         
@@ -535,16 +543,20 @@
     <script>
     $(document).ready(function(){
  
-        var height = $("#jumbotron-img").height();
+        var imgheight = $("#jumbotron-img").height();
             
-            if(height > 0) {
-                $("#about-row").css("margin-top",height);
+            if(imgheight > 0) {
+                $("#about-row").css("margin-top",imgheight);
             }
  
         /*Scroll Spy*/
         
         
-        $('.navbar-nav a').click(function() {
+        
+
+        
+    })
+    $('.navbar-nav a').click(function() {
             
             var href = this.hash;
             
@@ -561,9 +573,6 @@
             
             $('#jumbotron-row').css({'opacity': ((height - scrollTop) / height)});
         });
-
-        
-    })    
     </script>
     
     
