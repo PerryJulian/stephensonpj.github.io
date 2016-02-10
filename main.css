@@ -1,6 +1,6 @@
 body {
    position: relative;
-   background-color:  rgba(39,39,39,.6);
+  background-color:  #6F6F6F;
 }
 .wrapper {
    position: absolute;
@@ -42,7 +42,7 @@ body {
 
 .jumbotron-img {  
     padding: 0px;
-    z-index: -99;
+    z-index: 9999;
     position: fixed;
     
 }
@@ -64,8 +64,13 @@ body {
     text-align: center;
     background-color: rgba(39,39,39,1);
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Forum', cursive;
+}
+
+#list {
+   /*line-height: 15px;*/
+   text-align: center;
 }
 
 #about-row {
@@ -104,7 +109,7 @@ body {
 #quote {
     text-align: center;
     color: rgba(255,191,64,1);
-    font-family: 'Handlee', cursive;
+    font-family: 'Forum', cursive;
     padding-top: 45px;
     padding-bottom: 40px;
     border-left-width:0px;
@@ -239,9 +244,24 @@ body {
     margin: auto;
     text-align: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+   #tumblr-photo {
+      height: 150px;   
+   }
+}
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : portrait) {
+   #tumblr-photo {
+      height: 200px;
+   }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   #tumblr-photo {
+      height: 300px;
+   }
+}
 
 #tumblr-photo {
-    height: 300px;
+   max-height: 300px;
     display: inline-block;
     margin: auto;
 }
@@ -330,15 +350,15 @@ body {
 }
 
 .page-break3 {
-    background-color: rgba(39,39,39,0);
-    border-top: 0px solid rgba(39,39,39,1);
-    border-bottom: 2px solid #004DFF;
-    box-shadow: 0px 0px 5px #004DFF;
+   background-color: rgba(39,39,39,1);
+   border-top: 0px solid rgba(39,39,39,1);
+   /*border-bottom: 2px solid #004DFF;*/
+   box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
 }
 
 .contact {
    padding-top: 0px;
-   background-color: rgba(39,39,39,.4);
+   background-color: #6F6F6F;
    text-align: center;
 }
    
@@ -365,7 +385,7 @@ body {
 #connect-links {
    max-width: 1000px;
    margin: auto;
-   background-color: #949494;
+   /*background-color: #949494;*/
    /*box-shadow: 3px 4px 15px #00FFFF, -3px 4px 15px #004DFF;*/
 }
 
@@ -495,6 +515,7 @@ body {
   background-size: 0%;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+  border-radius: 100px;
 }
 
 .icon__name {
@@ -523,17 +544,17 @@ body {
 }
 
 .icon--twitter a {
-  background-color: rgba(39,39,39,1);
-  background-image: url("http://benhodgson.net/codepen/social/twitter-128.png");
+  background-color: rgba(39,39,39,0);
+  background-image: url("twitter.png");
 }
 
 .icon--linkedin a {
-  background-color: rgba(39,39,39,1);
-  background-image: url("http://benhodgson.net/codepen/social/linkedin-128.png");
+  background-color: rgba(39,39,39,0);
+  background-image: url("in.png");
 }
 
 .icon--instagram a {
-  background-color: rgba(39,39,39,1);
-  background-image: url("http://benhodgson.net/codepen/social/instagram-128.png");
+  background-color: rgba(39,39,39,0);
+  background-image: url("insta.png");
 }
 
