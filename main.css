@@ -1,6 +1,6 @@
 body {
    position: relative;
-  background-color:  #6F6F6F;
+   background-color:  #6F6F6F;
 }
 .wrapper {
    position: absolute;
@@ -9,12 +9,12 @@ body {
 /*Navbar*/
 
 .navbar-default {
-    background-color: rgba(39,39,39,1);
-    border-bottom: 1px solid white;
+   background-color: rgba(39,39,39,1);
+   border-bottom: 1px solid white;
 }
 
 #brand {
-     color: #009898;
+   color: #009898;
 }
 
 .navbar-nav {
@@ -71,8 +71,29 @@ body {
 #list {
    /*line-height: 15px;*/
    text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+#list tr {
+  
+    position: relative;
+    z-index: 2; 
 }
 
+#div-img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+}
+#list img {
+   display: block;
+   position: absolute;
+    left: 55px;
+   margin: auto;
+    height: auto;
+    opacity: 0.05;
+   
+}
 #about-row {
    margin-top:100%;
    position: relative;
@@ -94,6 +115,13 @@ body {
 #about-text {
     padding-top: 80px;
     padding-bottom: 5px;
+    
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#about-text p{
+   opacity: 1 !important;
 }
 
 #got{
@@ -136,7 +164,7 @@ body {
    color: white;
 }
 #projects .section-header {
-   color: #FFAA00;
+   color: #FFFFFF;
 }/*
 #contact .section-header {
    color: #004DFF;
@@ -264,6 +292,11 @@ body {
    max-height: 300px;
     display: inline-block;
     margin: auto;
+    opacity: .15;
+}
+
+#tumblr-photo:hover {
+   opacity: 1;
 }
 
 #photo-row-bottom {
@@ -427,7 +460,7 @@ body {
    border: 1px solid rgba(0,0,0,0.1);
    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
    background-color: #949494;
-   border-radius: 0px;
+   border-radius: 10px;
 }
 
 .form-fill {
@@ -435,6 +468,7 @@ body {
    background-color: rgba(39,39,39,.2);
    margin:auto;
 }
+
 
 .glow {
     -webkit-filter: blur(5px);
@@ -470,6 +504,13 @@ body {
    /*background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
+    min-height: 80px;
+}
+
+#footer-text {
+   color: #009898;
+   display: ;
+   
 }
 
 /**********************************Icons*******************************************/

@@ -46,41 +46,38 @@
                     </div>
                 </div>
                 <script>
-            var imgheight = $("#jumbotron-img").height();
             
-            if(imgheight > 0) {
-                $("#about-row").css("margin-top",imgheight);
-            }
         </script>
                 <div class="row" id="about-row">
                     <div class="col-md-3">
                         
                     </div>
                     <div class="col-xs-12 col-md-6 slide-left" id="about-text">
-                        <table style="margin-top: 40px"><!--Remove style from this area-->
+                        <table id="list" style="margin-top: 40px"><!--Remove style from this area-->
+                            
                             <tr>
                                 <td>
-                                    <p>Writing bio's has never really been  one of my strongpoints, so here's three random facts about me.</p>
+                                    <p><u>Let's get started: <strong>Three Truths</u></strong></p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="list">
-                                    
-                                        <p>1. If you have never seen Game of Thrones, I'm sorry for you.</p>
-                                        <p>2. I like lists almost as much as I like the Cowboys.</p>
-                                        <p>3. Lasanga > Pizza. #Facts</p>
-                                    
+                                <td>
+                                    <p><img id="div-img" class="img-responsive" src=406.gif></p>
+                                        <p>1. I like lists almost as much as I like watching a good game.</p>
+                                        <p>2. If you have never seen Game of Thrones, I'm sorry for you.</p>
+                                        <p>3. Lasanga > Pizza. <span style="font-size: .7em">#facts</span></p>
                                 </td>
                             </tr>
                             <br><br>
                             <tr>
                                 <td>
-                                    <p><br>Now for the reason you have come this far.<br></p>
-                                    <p>My name is Perry Julian Stephenson, I am a student finishing up my undergrad at Virginia Commonwealth University.
-                                     Studying Computer Science has allowed me to perfect my old childhood pasttime of <strike>breaking</strike> building things in order to understand how they work.
-                                    My programming interests range from web design and mobile app development, to writing algorithms that can sort through information in the fastest way possible.
+                                    <p style="font-size: .9em"><br>Now for the reason you have come this far.<br></p>
+                                    <p>A military spawn whose family originiated on the east coast, I am currently a student finishing up my undergrad at Virginia Commonwealth University.
+                                     Studying Computer Science has allowed me to revist my childhood niche of <span style="font-size: .8em"><strike><i>breaking</i></strike></span>
+                                     building things in order to understand how they work.
+                                    My programming experience ranges from web design and mobile application development, to designing algorithms and data structures that can be implemented in databases.
                                     </p>
-                                    <p>If you need help with anything related below, feel free to reach out to me. I'm always up for a new challenge.</p>
+                                    <p>Feel free to reach out to me about anything. I live for interesting conversations, and I am always up for a new challenge.</p>
                                 </td>
                             </tr>
                             <tr>
@@ -167,7 +164,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <p id="experience-category" style="text-align: center">*experience varies</p>
+                                <p id="experience-category" style="text-align: center; font-size: .8em"><i>experience varies</i></p>
                               
                                 <!--Software Development Tab button panes-->
                                 
@@ -273,7 +270,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <p id="experience-category" style="text-align: center">*experience varies</p>
+                                <p id="experience-category" style="text-align: center; font-size: .8em"><i>experience varies</i></p>
                                 
                                 <!--Web Development Tab button panes-->
                                 
@@ -290,7 +287,8 @@
                                                     </div>
                                                     <div id="html" class="accordion-body collapse">
                                                         <div class="accordion-inner">
-                                                            <p>That I write with Search Engine Optimization(SEO) tags and keywords, that allows for your site to be easily read by search engines and displayed higher in their search results.</p>
+                                                            <p>What is displayed on a webpage <span style="font-size: .9em"><strong><u>Bonus</u> Search Engine Optimization(SEO):</strong></span>
+                                                            tags and keywords, that allows for a webpage to be easily read by search engines and displayed higher in their search results</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -302,7 +300,7 @@
                                                     </div>
                                                     <div class="accordion-body collapse" id="css">
                                                         <div class="accordion-inner">
-                                                            <p>Targets individual aspects of your website to give you complete control over customization without the constraints of a template.</p>
+                                                            <p>Specifies the layout and design of a webpage</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -314,7 +312,8 @@
                                                     </div>
                                                     <div class="accordion-body collapse" id="javascript">
                                                         <div class="accordion-inner">
-                                                            <p>Gives life to webpages and adds to the user experience.</p>
+                                                            <p>Describes the behavior of webpages and adds to the user experience, for example this dropdown menu that you clicked on
+                                                            <span style="font-size: .8em">(click it again)</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -488,7 +487,7 @@
                             <br>
                             <p style="color: white"><u>Looking for help customizing a responsive webpage for your business, blog or portfolio?</u></p>
                             <br>
-                        <div class="well form-fill">
+                        <div class="well form-fill" id="contact-info">
                             <h4><strong>Send me an email at:</strong></h4>
                             <p style="color: white"><u>stephensonperryj@gmail.com</u></p>
                             <h4><strong>Leave a voice or text message at:</strong></h4>
@@ -540,11 +539,11 @@
             <div class="container-fluid">
                 <br>
                 <div class="pull-left">
-                    <p style="font-size: .75em">Designed and Developed by Perry Stephenson<span style="color: #FFAA00">.</span></p>
-                    <p style="font-size: .75em">Copyright &copy; 2016 stephensonpj.github.io</p>
+                    <p id="footer-text" style="font-size: .75em">Designed and Developed by Perry Stephenson<span style="color: #FFAA00">.</span></p>
+                    <p id="footer-text" style="font-size: .75em">Copyright &copy; 2016 stephensonpj.github.io</p>
                 </div>
             </div>
-        </div>0
+        </div>
     </div>
     <!--JQUERY-->
     
@@ -554,12 +553,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script>
+        
     $(document).ready(function(){
                 
         var pageTop = $('html, body').scrollTop()
         
             if (pageTop == 0) {
-                $("#jumbotron-img").css({"opacity": 1});//code
+                $("#jumbotron-img").css({"opacity": 1});
             }
         
     /*Margin push*/
@@ -575,7 +575,6 @@
         $('.navbar-nav a').click(function() {
                 
             var href = this.hash;
-                
             $('html, body').animate({scrollTop: $(href).offset().top}, 2300, function(){
                     window.location.hash = href;
             });    
@@ -584,11 +583,11 @@
     /*Jumbotron Fade*/        
     
         $(window).scroll(function () {
-                
             var scrollTop = $(window).scrollTop() + 400;
             var height = $(window).height();
                 
             $('#jumbotron-row').css({'opacity': ((height + 200 - scrollTop) / height)});
+        
         });
     })
     </script>
