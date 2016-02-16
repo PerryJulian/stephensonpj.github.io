@@ -293,10 +293,14 @@ body {
     display: inline-block;
     margin: auto;
     opacity: .15;
+    filter: blur(3px);
+   -webkit-filter: blur(3px);
 }
 
 #tumblr-photo:hover {
    opacity: 1;
+   filter: blur(0px);
+   -webkit-filter: blur(0px);
 }
 
 #photo-row-bottom {
@@ -306,7 +310,7 @@ body {
 
 #page-break2{
     height: 100px;
-    background-color: rgba(39,39,39,.5);
+    background-color: rgba(39,39,39,0);
 }
 
 #row2 {
@@ -383,7 +387,7 @@ body {
 }
 
 .page-break3 {
-   background-color: rgba(39,39,39,1);
+   background-color: rgba(39,39,39,.4);
    border-top: 0px solid rgba(39,39,39,1);
    /*border-bottom: 2px solid #004DFF;*/
    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
@@ -416,16 +420,21 @@ body {
 }
 
 #connect-links {
-   max-width: 1000px;
+   max-height: 125px;
+   width: 100%;
    margin: auto;
-   /*background-color: #949494;*/
+   
+   padding-top: 10px;
+   padding-bottom: 10px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,.35);
    /*box-shadow: 3px 4px 15px #00FFFF, -3px 4px 15px #004DFF;*/
 }
 
 #follow-header {
    
    margin: auto;
-   padding-bottom: 100px;
+   padding: 0px;
+   /*padding-bottom: 100px;*/
    box-shadow: 0px 0px 5px rgba(0,0,0,.35); /*-2px 7px 15px #004DFF;*/
    border: 0px solid #00FFFF;
    width: 100%;
@@ -447,6 +456,18 @@ body {
    background-color: rgba(39,39,39,.6);
 }
 
+#social-background {
+   width: 100%;
+   margin: auto;
+   background-color: rgba(39,39,39,.5);
+}
+
+.social-icons {
+   max-width: 1000px;
+   margin: auto;
+  
+}
+
 #contact-header {
    color: #FFFFFF;
    margin: auto;
@@ -456,9 +477,8 @@ body {
 
 #contact .form-fill{
    text-align: center;
-   border: 0px solid #004DFF;
-   border: 1px solid rgba(0,0,0,0.1);
-   box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+   border: 0px;
+   box-shadow: inset 0 0 7px 4px rgba(39,39,39,.5);
    background-color: #949494;
    border-radius: 10px;
 }
@@ -471,8 +491,8 @@ body {
 
 
 .glow {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
     /*box-shadow: 2px 3px 15px #FFBF40, -2px -3px 15px #FFBF40;*/
     background-color: #949494;
 }
@@ -480,8 +500,8 @@ body {
 .glow:hover {
    filter: blur(0px);
    -webkit-filter: blur(0px);
-   box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
-   border: 1px solid rgba(0,0,0,0.1);
+   box-shadow: inset 0 0 7px 4px rgba(39,39,39,.5);
+   border: 0px solid rgba(0,0,0,0.1);
 }
 
 .page-header {
