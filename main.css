@@ -308,7 +308,7 @@ body {
    max-height: 300px;
     display: inline-block;
     margin: auto;
-    opacity: .15;
+    opacity: .5;
     filter: blur(3px);
    -webkit-filter: blur(3px);
 }
