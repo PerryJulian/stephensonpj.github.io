@@ -553,7 +553,7 @@ body {
    /*background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
-    min-height: 80px;
+    max-height: 50px;
 }
 #footr-text {
    color: #009898;
