@@ -11,6 +11,7 @@ body {
 .navbar-default {
    background-color: rgba(39,39,39,1);
    border-bottom: 1px solid white;
+   z-index: 500;
 }
 
 #brand {
@@ -42,7 +43,7 @@ body {
 
 .jumbotron-img {  
     padding: 0px;
-    z-index: 9999;
+    z-index: 400;
     position: fixed;
     
 }
@@ -175,7 +176,7 @@ body {
 
 #experience{
     padding-top:80px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     background-color: rgba(39,39,39,0);   
     border-left-width:0px;
     border-left-style: solid;
@@ -186,6 +187,10 @@ body {
     -moz-border-image: -moz-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;    
     -o-border-image: -o-linear-gradient(rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;
     border-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(39,39,39,1)) 1 100%;*/
+}
+
+#experience-padding {
+   padding-bottom: 40px;
 }
 
 .skill-tabs a {
@@ -266,6 +271,17 @@ body {
 #experience-content {
    background-color: rgba(39,39,39,0);
    text-align: center;
+}
+
+#tumblr {
+   background-color: rgba(39,39,39,0);
+   text-align: center;
+}
+
+#tumblr p{
+   margin-bottom: 0px;
+   color: white;
+   font-size: .75em;
 }
 
 .row-of-photos {
@@ -365,7 +381,9 @@ body {
    border: 0px solid #00FFFF;
    /*width: 200px;*/
 }
-
+#project-background {
+   background-color: rgba(39,39,39,.7);
+}
 .projects {
     background-color: rgba(39,39,39,.4);
     padding-top: 0px;
@@ -387,10 +405,11 @@ body {
 }
 
 .page-break3 {
-   background-color: rgba(39,39,39,.4);
+   background-color: rgba(39,39,39,.6);
    border-top: 0px solid rgba(39,39,39,1);
    /*border-bottom: 2px solid #004DFF;*/
    box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+   height: 10px;
 }
 
 .contact {
@@ -435,10 +454,10 @@ body {
    margin: auto;
    padding: 0px;
    /*padding-bottom: 100px;*/
-   box-shadow: 0px 0px 5px rgba(0,0,0,.35); /*-2px 7px 15px #004DFF;*/
+   /*box-shadow: 0px 0px 5px rgba(0,0,0,.35); /*-2px 7px 15px #004DFF;*/
    border: 0px solid #00FFFF;
    width: 100%;
-   background-color: rgba(39,39,39,.6);
+   
 }
 
 #contact-underline {
@@ -446,8 +465,18 @@ body {
    box-shadow: 0px 0px 5px rgba(0,0,0,.35);
    padding-top: 10px;
    padding-bottom: 10px;
-   margin-top: 80px;
+   margin-top: 50px;
    margin-bottom: 60px;
+}
+#info-box {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,.35);
+   background-color: rgba(39,39,39,.6);
+}
+#contact-padding {
+   padding-top: 75px;
+   background-color: rgba(39,39,39,.6);
 }
 
 #contact-section {
@@ -459,7 +488,7 @@ body {
 #social-background {
    width: 100%;
    margin: auto;
-   background-color: rgba(39,39,39,.5);
+   /*background-color: rgba(39,39,39,.9);*/
 }
 
 .social-icons {
@@ -480,11 +509,11 @@ body {
    border: 0px;
    box-shadow: inset 0 0 7px 4px rgba(39,39,39,.5);
    background-color: #949494;
-   border-radius: 10px;
+   border-radius: 0px;
 }
 
 .form-fill {
-   max-width: 500px;
+   width 100%;
    background-color: rgba(39,39,39,.2);
    margin:auto;
 }
@@ -526,10 +555,19 @@ body {
     background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
     min-height: 80px;
 }
+#footr-text {
+   color: #009898;
+   font-family: 'Forum', cursive;
+}
 
+#last {
+   border-top: 1px solid #FFAA00;
+   padding-bottom: 80px;
+   background-color: rgba(39,39,39,1);
+}
 #footer-text {
    color: #009898;
-   display: ;
+   visibility: hidden;
    
 }
 
