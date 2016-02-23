@@ -62,23 +62,10 @@ body {
 }
 
 #about{
-    text-align: center;
-    background-color: rgba(39,39,39,1);
-    color: white;
-    font-size: 1.5em;
-    font-family: 'Forum', cursive;
-}
-
-#list {
-   /*line-height: 15px;*/
    text-align: center;
-   position: relative;
-   overflow: hidden;
-}
-#list tr {
-  
-   position: relative;
-   z-index: 2; 
+   background-color: rgba(39,39,39,1);
+   color: white;
+   font-family: 'Ubuntu', sans-serif;
 }
 
 #div-img {
@@ -96,7 +83,7 @@ body {
    
 }
 #about-row {
-   padding-top:150px;
+   padding-top:80px;
    background-color: rgba(39,39,39,1);
    margin-top:100%;
    position: relative;
@@ -104,7 +91,9 @@ body {
    z-index: 100;
    text-align: center;
 }
-
+#about-text p {
+   font-size: 1.25em;
+}
 #about-text {
    padding-top: 5px;
    padding-bottom: 5px;  
@@ -148,26 +137,14 @@ body {
 
 .page-break1 {
    background-color: rgba(39,39,39,1);
-   border-bottom: 1px solid white; 
 }
 
 #quote {
-    text-align: center;
-    color: rgba(255,191,64,1);
-    font-family: 'Forum', cursive;
-    padding-top: 45px;
-    padding-bottom: 40px;
-    border-left-width:0px;
-    
-    border-left-style: solid;
-    border-right-width:0px;
-    border-right-style: solid;
-    /*
-    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,233,233,1)), to(rgba(255,255,255,1))) 1 100%;
-    -webkit-border-image: -webkit-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
-    -moz-border-image: -moz-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;    
-    -o-border-image: -o-linear-gradient(rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(0,233,233,1), rgba(255,255,255,1)) 1 100%;*/
+   text-align: center;
+   color: rgba(255,191,64,1);
+   font-family: 'Josefin Slab', serif;
+   padding-top: 45px;
+   padding-bottom: 40px;
 }
 
 .education {
@@ -175,21 +152,14 @@ body {
 }
 
 .section-header {
-    font-family: 'Forum', cursive;
+   font-family: 'Droid Sans', sans-serif;
 }
 #experience .section-header {
    color: white;
 }
 #projects .section-header {
    color: #FFFFFF;
-}/*
-#contact .section-header {
-   color: #004DFF;
-}*/
-
-
-
-
+}
 #experience{
    position: relative;
    z-index: 100;
@@ -202,25 +172,14 @@ body {
    padding-bottom: 40px;
 }
 
-.skill-tabs a {
-    /*border-top: 3px solid #BF8F30;
-    border-bottom: 3px solid #BF8F30;*/
-}
+
 .skill-tabs a:link, .skill-tabs a:visited{
     background-color: rgba(39,39,39,1);
     border-radius: 0px;
     color: #BF8F30;
 }
-/*
-.skill-tabs > li.active > a,
-.skill-tabs > a:hover,
-.skill-tabs > li.active > a:focus {
-    background-color: #009898;
-}*/
 
-.software-tabs a {
-    /*border-bottom: 1px solid #FFBF40;*/
-}
+
 
 .software-tabs a:link, .software-tabs a:visited {
     background-color: rgba(39,39,39,1);
@@ -302,48 +261,29 @@ body {
 }
 
 #photo-row-bottom {
-    margin: auto;
-    padding: 0px;
+   margin: auto;
+   padding: 0px;
 }
 
 #page-break2{
-    height: 100px;
-    background-color: rgba(39,39,39,0);
+   height: 100px;
+   background-color: rgba(39,39,39,0);
 }
 
 #row2 {
-    border-bottom: 0px solid #FFAA00;
+   border-bottom: 0px solid #FFAA00;
 }
 
 .page-break2 {
-    background-color: rgba(39,39,39,1);
-    border-top: 0px solid rgba(39,39,39,1);
-    border-bottom: 0px solid #FFAA00;
-    box-shadow: 0px 0px 0px #FFAA00;
-    
-    border-left-width:0px;
-    border-left-style: solid;
-    border-right-width:0px;
-    border-right-style: solid;   
-    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(39,39,39,1)), to(#FFBF40)) 1 100%;
-    -webkit-border-image: -webkit-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;
-    -moz-border-image: -moz-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;    
-    -o-border-image: -o-linear-gradient(rgba(39,39,39,1), #FFBF40) 1 100%;
-    border-image: linear-gradient(to bottom, rgba(39,39,39,1), #FFBF40) 1 100%;*/
+   background-color: rgba(39,39,39,1);
+   border-top: 0px solid rgba(39,39,39,1);
+   border-bottom: 0px solid #FFAA00;
+   box-shadow: 0px 0px 0px #FFAA00;   
 }
 
 #projects {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-left-width:0px;
-    border-left-style: solid;
-    border-right-width:0px;
-    border-right-style: solid;   
-    /*-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFBF40), to(rgba(39,39,39,1))) 1 100%;
-    -webkit-border-image: -webkit-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;
-    -moz-border-image: -moz-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;    
-    -o-border-image: -o-linear-gradient(#FFBF40, rgba(39,39,39,1)) 1 100%;
-    border-image: linear-gradient(to bottom, #FFBF40, rgba(39,39,39,1)) 1 100%;*/
+   padding-top: 0px;
+   padding-bottom: 0px;
 }
 
 .page-break ul li{
@@ -444,25 +384,25 @@ body {
 
 #contact-underline {
    border-bottom: 0px solid #009898;
-   box-shadow: 0px 0px 5px rgba(0,0,0,.35);
+   /*box-shadow: 0px 0px 5px rgba(0,0,0,.35);
    padding-top: 10px;
-   padding-bottom: 10px;
+   padding-bottom: 10px;*/
    margin-top: 50px;
    margin-bottom: 60px;
 }
 #info-box {
    padding-top: 10px;
    padding-bottom: 10px;
-   box-shadow: 0px 0px 5px rgba(0,0,0,.35);
    background-color: rgba(39,39,39,.6);
 }
+
 #contact-padding {
    padding-top: 75px;
    background-color: rgba(39,39,39,.6);
 }
 
 #contact-section {
-   width: 100%;
+   /*width: 100%;*/
    padding: 0px;
    background-color: rgba(39,39,39,.6);
 }
@@ -533,9 +473,9 @@ body {
    background: red; /* For browsers that do not support gradients */
    /*background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
    /*background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
-    max-height: 50px;
+   background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
+   max-height: 50px;
 }
 #footr-text {
    color: #009898;
@@ -543,7 +483,6 @@ body {
 }
 
 #last {
-   border-top: 1px solid #FFAA00;
    padding-bottom: 80px;
    background-color: rgba(39,39,39,1);
 }
