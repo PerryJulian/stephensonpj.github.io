@@ -350,7 +350,10 @@ body {
 #project-underline {
    border-bottom: 0px solid #FFBF40;
 }
-
+#project-head-background {
+   background-color: rgba(39,39,39,.7);
+   padding-top: 80px;
+}
 #project-header {
    color: #004DFF;
    margin: auto;
@@ -363,8 +366,8 @@ body {
    background-color: rgba(39,39,39,.7);
 }
 .projects {
-    background-color: rgba(39,39,39,.4);
-    padding-top: 0px;
+   background-color: rgba(39,39,39,.4);
+   padding-top: 80px;
 }
 
 #row3 {
@@ -438,13 +441,13 @@ body {
 }
 
 #contact-underline {
-   border-bottom: 0px solid #009898;
+   /*border-bottom: 0px solid #009898;*/
    margin-top: 50px;
    margin-bottom: 60px;
 }
 
 #contact-underline1 {
-   border-bottom: 0px solid #009898;
+   /*border-bottom: 0px solid #009898;*/
    margin-top: 50px;
    margin-bottom: 10px;
 }
@@ -461,15 +464,12 @@ body {
 }
 
 #contact-section {
-   /*width: 100%;*/
-   padding: 0px;
-   background-color: rgba(39,39,39,.6);
+   /*padding: 0px;*/
 }
 
 #social-background {
    width: 100%;
    margin: auto;
-   /*background-color: rgba(39,39,39,.9);*/
 }
 
 .social-icons {
@@ -477,25 +477,24 @@ body {
    margin: auto;
   
 }
-
+#page-head {
+   background-color: rgba(39,39,39,.6);
+   padding-top: 80px;
+}
 #contact-header {
    color: #FFFFFF;
    margin: auto;
    background-color: rgba(39,39,39,0);
-   border: 0px solid #004DFF;
 }
 
 #contact .form-fill{
    text-align: center;
    border: 0px;
-   /*box-shadow: inset 0 0 7px 4px rgba(39,39,39,.5);
-   background-color: #949494;*/
    border-radius: 0px;
 }
 
 .form-fill {
    width: 100%;
-   /*background-color: rgba(39,39,39,.2);*/
    margin:auto;
    color: white;
 }
@@ -539,7 +538,7 @@ body {
 }
 #footr-text {
    color: #FFFFFF;
-   font-family: 'Forum', cursive;
+   font-family: 'Ubuntu', sans-serif;
 }
 
 #last {
@@ -553,7 +552,9 @@ body {
 }
 
 /**********************************Icons*******************************************/
-
+#brand:hover {
+   color: red;
+}
 .social-icons {
    padding: 0px;
 }
