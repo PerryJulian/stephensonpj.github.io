@@ -1,7 +1,31 @@
 body {
    position: relative;
    background-color:  #6F6F6F;
+   back
 }
+
+#temp_BackgroundImage{
+   opacity: .8;
+   padding: 0px;
+   font-family: 'Reem Kufi', sans-serif;
+}
+
+#temp_BackgroundImage img{
+   max-width: 100%;
+   height: auto;
+}
+
+#temp_TextBox{
+   position: absolute;
+   top: 50%;
+   background: black;
+   color: white;
+   text-align: center;
+   width: 100%;
+   opacity: .8;
+   padding: 20px;
+}
+
 .wrapper {
    position: absolute;
 }

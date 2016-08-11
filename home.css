@@ -1,0 +1,112 @@
+body {
+   position: relative;
+   background-color:  #6F6F6F;
+   z-index: 1;
+}
+
+
+/*Navbar*/
+
+.navbar-default {
+   background-color: rgba(39,39,39,1); 
+   /*z-index: 500;*/
+}
+
+#brand {
+   color: #009898;
+}
+
+.navbar-nav {
+    background-color: rgba(39,39,39,.5);
+}
+
+#target a:hover {
+    background-color: #009898;
+    color: #FFAA00;
+}
+
+/*about*/
+
+.about{
+   padding-top: 25px;
+   text-align: center;
+   background-color:  #6F6F6F;
+   color: white;
+   font-family: 'Ubuntu', sans-serif;
+   position: relative;
+}
+
+#jumbotron-img {
+   max-width: 100%;
+   position: relative;
+   z-index: 3;
+   opacity: .1;
+}
+
+#stay {
+   top: ;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(39,39,39,1);
+   position: absolute;
+}
+/*
+#move {
+   position: absolute;
+   bottom:-100%;
+   height: 100%;
+   width: 100%;
+   background-color: #6F6F6F;
+   opacity: 0;
+}
+*/
+.box{
+   position: relative;
+   width: 100%;
+   height: 1000px;
+   overflow: hidden;
+   margin: auto;
+   z-index: 10;
+}
+
+.slide-down {
+   visibility: hidden;
+}
+/*
+.box:hover #move {
+    bottom: 0;
+    -webkit-transition: all 3s, -webkit-transform 3s;
+    transition: all 3s, transform 3s;
+    width:100%;
+    height:100%;
+    opacity:1;
+}
+*/
+
+
+
+.footer {
+   /*border-top: 2px solid #00FFFF;*/
+   /*background-color: rgba(39,39,39,.8);*/
+   color: #009898;
+   /*box-shadow: 0px -2px 15px #00FFFF;*/
+   background: red; /* For browsers that do not support gradients */
+   /*background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+   /*background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(rgba(39,39,39,.8),rgba(39,39,39,1)); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(rgba(39,39,39,.8), rgba(39,39,39,1)); /* Standard syntax */
+   max-height: 50px;
+}
+#footr-text {
+   color: #FFFFFF;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+
+#footer-text {
+   color: #FFFFFF;
+   visibility: hidden;
+   
+}
+
+

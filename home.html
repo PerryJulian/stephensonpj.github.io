@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My name is Perry Stephenson. I am currently a student finishing up my undergrad at Virginia Commonwealth University.
+                                     Studying Computer Science has allowed me to further develop my childhood curiosity of reverse engineering things in order to understand how they work.
+                                    My programming experience ranges from web design and mobile application development, to designing algorithms and data structures that can be implemented within databases." />
+    <meta name="keywords" content="Perry Stephenson,Richmond,Computer Science,Student,VCU,Virginia Commonwealth University,Web Development,Web Developer,Software,Developer,SEO,Portfolio" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Perry Stephenson | Richmond, Virginia | Computer Science Student</title>  
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <div class="wrapper">
+        <!--Navigation Bar-->
+        
+        <div class="nav navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" id="brand" href="#"><span style="color: white">PERRY</span><span style="color: #FFAA00">JULIAN</span><span style="color: white">.</span></a>
+                </div>
+                <div class="collapse navbar-collapse pull-right">
+                    <ul class="nav navbar-nav" id="target">
+                        <li><a href="#about-row">ABOUT</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+       
+        <!--About-->
+        <div class="about">
+            <div class="container-fluid">
+                <div>
+                <img id="jumbotron-img" class="img-responsive" alt="Perry Stephenson Jr." src="IMG_5102.jpg">  
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class=box>
+                        <div id="stay">
+                            <br><br><br><br><br><br><br><br><br>
+                            <br><br><br>
+                            <h1 id="slide" class="animated">Designer</h1>
+                            <br><br><br>
+                            <h1 id="slide1" class="animated">Developer</h1>
+                            <br><br><br>
+                            <h1 id="slide2" class="animated">Engineer</h1>
+                            <br><br><br><br><br><br><br><br><br>
+                            <button type="button" class="jump slide-up btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+                            
+                        </div>
+                        <div id="move">
+                            <br><br><br><br><br><br><br><br><br><br><br><br>
+                            <br><br><br><br><br><br><br><br><br><br><br><br>
+                            <p>My name is Perry. I like to use my hands to make things.</p>
+                            <br><br><br><br><br><br>
+                            <br><br><br><br><br><br><br>                            
+                            <button type="button" class="slide-down btn btn-default"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        
+        <div class="nav navbar-default navbar-fixed-bottom footer">
+            <div class="container-fluid">
+                <br>
+                <div class="pull-left">
+                    <p id="footer-text" style="font-size: .9em"><strong>Designed and Developed by Perry Stephenson Jr.<span style="color: #FFAA00">.</span></strong></p>
+                    <p id="footer-text" style="font-size: .9em"><strong>Copyright &copy; 2016 perry<span style="color: #FFAA00">julian</span>.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JQUERY-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".jump").addClass('animated pulse');
+        $(".slide-up").click(function(){
+            $('#slide').removeClass('fadeInUp');
+            $('#slide1').removeClass('fadeInUp');
+            $('#slide2').removeClass('fadeInUp');
+            $('#slide').addClass('slideOutLeft');
+            $('#slide1').addClass('slideOutRight');
+            $('#slide2').addClass('slideOutLeft');
+            $("#stay").slideUp(2000);
+            $(".slide-down").css("visibility", "visible");      
+        });
+        $(".slide-down").click(function(){
+            $('#slide').removeClass('slideOutLeft');
+            $('#slide1').removeClass('slideOutRight');
+            $('#slide2').removeClass('slideOutLeft');
+            //$(".slide-down").css("visibility","hidden");
+            $("#stay").slideDown(2000);
+            $('#slide').addClass('animated fadeInUp');
+            $('#slide1').addClass('animated fadeInUp');
+            $('#slide2').addClass('animated fadeInUp');
+        });
+    });
+    </script>
+    <script>
+        /*$(document).ready(function(){
+            $("#about-btn").click(function(){
+                $("#move").slideUp();
+            });
+            
+            $("#about-btn").click(function(){
+                $("#move").slideDown();
+            });
+        });*/
+    
+        $("about-btn").click(function(){
+            $(this).addClass("moved");
+        });
+        
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    
+</body>
+</html>
